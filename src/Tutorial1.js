@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Tutorial1 extends Component {
+class Button extends Component {
   constructor(props) {
     super(props);
     this.state = { counter: 0 };
@@ -20,5 +20,22 @@ class Tutorial1 extends Component {
     );
   }
 }
+
+const Result = (props) => {
+  return (
+    <div>...</div>
+  );
+};
+
+class Tutorial1 extends React.Component {
+  render() {
+    return ( 
+      <div>
+        <Button />
+        <Result />
+      </div>
+    );
+  }
+};
 
 export default Tutorial1;
