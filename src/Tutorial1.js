@@ -6,9 +6,17 @@ class Tutorial1 extends Component {
     this.state = { counter: 0 };
   }
 
+  handleClick = () => {
+    this.setState({
+      counter: this.state.counter + 1
+    });
+  };
+
   render() {
     return (
-      <button>{this.state.counter}</button>
+      <button onClick={this.handleClick} >
+        {this.state.counter}
+      </button>
     );
   }
 }
