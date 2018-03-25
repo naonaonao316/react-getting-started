@@ -7,9 +7,9 @@ class Tutorial1 extends Component {
   }
 
   handleClick = () => {
-    this.setState({
-      counter: this.state.counter + 1
-    });
+    this.setState((prevState) => ({
+      counter: prevState.counter + 1
+    }));
   };
 
   render() {
