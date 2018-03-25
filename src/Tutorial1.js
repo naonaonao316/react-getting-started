@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 
 class Button extends Component {
-  state = { counter : 0 }
 
-  handleClick = () => {
-    this.setState((prevState) => ({
-      counter: prevState.counter + 1
-    }));
-  };
+//  handleClick = () => {
+//    this.setState((prevState) => ({
+//      counter: prevState.counter + 1
+//    }));
+//  };
 
   render() {
     return (
@@ -25,6 +24,8 @@ const Result = (props) => {
 };
 
 class Tutorial1 extends React.Component {
+  state = { counter : 0 }
+
   render() {
     return ( 
       <div>
