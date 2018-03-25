@@ -10,7 +10,7 @@ class Button extends Component {
 
   render() {
     return (
-      <button onClick={this.handleClick} >
+      <button onClick={this.props.onClickFunction} >
         +1
       </button>
     );
@@ -26,10 +26,17 @@ const Result = (props) => {
 class Tutorial1 extends React.Component {
   state = { counter : 0 }
 
+  incrementCounter = () => {
+    this.setState((prevState) => ({
+      counter: prevState.counter + 1
+    }));
+  };
+
   render() {
+    console.log(this.state.counter);
     return ( 
       <div>
-        <Button />
+        <Button onClickFunction={this.incrementCounter} />
         <Result />
       </div>
     );
