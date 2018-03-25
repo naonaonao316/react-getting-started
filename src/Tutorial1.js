@@ -15,7 +15,7 @@ class Button extends Component {
   render() {
     return (
       <button onClick={this.handleClick} >
-        {this.state.counter}
+        +1
       </button>
     );
   }
