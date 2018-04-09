@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import moment from 'moment';
+import PropTypes from 'prop-types'; // ES6
+import DateTimeField from "react-bootstrap-datetimepicker";
+import './bootstrap-datetimepicker.css';
 
 class Tutorial2 extends React.Component {
   render() {
@@ -23,7 +27,10 @@ class Tutorial2 extends React.Component {
     }
 
     return ( 
-      <CardList />
+      <div>
+        <CardList />
+        <DateTimeField />
+      </div>
     );
   }
 };
